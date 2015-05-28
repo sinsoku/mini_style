@@ -1,6 +1,6 @@
 # MiniStyle
 
-TODO: Write a gem description
+`mini_style` provides a simple helper.
 
 ## Installation
 
@@ -20,7 +20,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+in your views:
+
+```ruby
+style('alert')
+# => 'alert'
+```
+
+```ruby
+style('alert', 'alert-danger': !!flash[:alert], 'alert-success': !!flash[:notice])
+# => 'alert alert-success'
+```
+
+```ruby
+style('alert-danger': !!flash[:alert], 'alert-success': !!flash[:notice])
+# => 'alert-success'
+```
+
 
 ## Contributing
 
