@@ -1,5 +1,7 @@
 [![Gem Version](https://badge.fury.io/rb/mini_style.svg)](http://badge.fury.io/rb/mini_style)
 [![Build Status](https://travis-ci.org/sinsoku/mini_style.svg?branch=master)](https://travis-ci.org/sinsoku/mini_style)
+[![Code Climate](https://img.shields.io/codeclimate/github/sinsoku/mini_style.svg)](https://codeclimate.com/github/sinsoku/mini_style)
+[![Coverage Status](https://coveralls.io/repos/sinsoku/mini_style/badge.svg?branch=master)](https://coveralls.io/r/sinsoku/mini_style?branch=master)
 
 # MiniStyle
 
