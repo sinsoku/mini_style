@@ -1,11 +1,21 @@
 require 'spec_helper'
 
 describe MiniStyle do
-  it 'has a version number' do
-    expect(MiniStyle::VERSION).not_to be nil
+  let(:dummy_class) { Class.new.include(MiniStyle::Helpers) }
+  let(:helper) { dummy_class.new }
+
+  context 'give a default style' do
+    subject { helper.style('alert') }
+    it { is_expected.to eq 'alert' }
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  context 'give dynamic styles' do
+    subject { helper.style('alert-danger': true, disabled: false) }
+    it { is_expected.to eq 'alert-danger' }
+  end
+
+  context 'give a style and dynamic styles' do
+    subject { helper.style('alert', 'alert-danger': true, disabled: false) }
+    it { is_expected.to eq 'alert-danger alert' }
   end
 end
