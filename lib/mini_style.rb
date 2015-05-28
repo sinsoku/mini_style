@@ -1,15 +1,15 @@
-require "mini_style/version"
+require 'mini_style/version'
 
 module MiniStyle
   module Helpers
-    def style(default=nil, options={})
+    def style(default = nil, options = {})
       if default.is_a?(Hash)
         options = default
       elsif default
         options[default] = true
       end
 
-      styles = options.select { |k,v| v }.keys
+      styles = options.select { |_k, v| v }.keys
       styles.size > 0 ? styles.join(' ') : nil
     end
   end
