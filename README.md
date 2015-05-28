@@ -1,3 +1,6 @@
+[![Gem Version](https://badge.fury.io/rb/mini_style.svg)](http://badge.fury.io/rb/mini_style)
+[![Build Status](https://travis-ci.org/sinsoku/mini_style.svg?branch=master)](https://travis-ci.org/sinsoku/mini_style)
+
 # MiniStyle
 
 `mini_style` provides a simple helper.
