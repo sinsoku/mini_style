@@ -8,7 +8,9 @@ module MiniStyle
       elsif default
         options[default] = true
       end
-      options.select { |k,v| v }.keys.join(' ')
+
+      styles = options.select { |k,v| v }.keys
+      styles.size > 0 ? styles.join(' ') : nil
     end
   end
 end

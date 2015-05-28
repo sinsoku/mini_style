@@ -18,4 +18,9 @@ describe MiniStyle do
     subject { helper.style('alert', 'alert-danger': true, disabled: false) }
     it { is_expected.to eq 'alert-danger alert' }
   end
+
+  context 'no conditions match' do
+    subject { helper.style(disabled: false) }
+    it { is_expected.to be_nil }
+  end
 end
