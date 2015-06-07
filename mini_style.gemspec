@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['sinsoku.listy@gmail.com']
   spec.summary       = 'mini_style provides a simple helper'
   spec.description   = 'mini_style provides a simple helper'
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/sinsoku/mini_style'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
